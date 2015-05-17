@@ -7,7 +7,6 @@ function animateToSection(link, current, previous) {
   var effectNode = document.createElement('div');
   effectNode.className = 'circleEffect';
 
-  var currentColor = window.getComputedStyle(header).backgroundColor;
   var newColor = 'hsl(' + Math.round(Math.random() * 255) + ', 46%, 42%)';
 
   var bounds = link.getBoundingClientRect();
