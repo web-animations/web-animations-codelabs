@@ -23,10 +23,6 @@ body {
   min-height: 120vh;
 }
 
-body[transition] {
-  overflow: hidden;
-}
-
 header {
   min-height: 20em;
   text-align: right;
@@ -64,14 +60,6 @@ header .links a.active {
   opacity: 1.0;
 }
 
-header div.effect {
-  width: 240vw;
-  height: 240vw;
-  margin-left: -120vw;
-  margin-top: -120vw;
-  border-radius: 100%;
-  position: absolute;
-}
 
 section {
   margin: -2em 2em 2em;
