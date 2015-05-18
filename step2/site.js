@@ -25,11 +25,24 @@ function animateToSection(link, current, previous) {
 
   var scaleEffect = new KeyframeEffect(effectNode, scaleSteps, timing);
 
+  var allEffects = [scaleEffect, buildFadeIn(current)];
+
   // Play all animations within this group.
-  var groupEffect = new GroupEffect([effectNode]);
+  var groupEffect = new GroupEffect(allEffects);
   var anim = document.timeline.play(groupEffect);
   anim.addEventListener('finish', function() {
     header.style.backgroundColor = newColor;
     header.removeChild(effectNode);
+  });
+}
+
+function buildFadeIn(target) {
+  var steps = [
+    {opacity: 0, transform: 'translate(0, 20em)'},
+    {opacity: 1, transform: 'translate(0)'}
+  ];
+  return new KeyframeEffect(target, steps, {
+    duration: 500,
+    easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)'
   });
 }
