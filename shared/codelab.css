@@ -14,8 +14,6 @@
  * the License.
  */
 
-
-
 body {
   font-family: "Roboto", Arial, Sans-Serif;
   margin: 0;
@@ -62,11 +60,17 @@ header .links a.active {
 
 
 section {
+  will-change: transform;
   margin: -2em 2em 2em;
   z-index: 2;
   width: calc(100% - 4em);
   box-sizing: border-box;
   position: absolute;
+}
+
+section[hidden] {
+  display: block;
+  visibility: hidden;
 }
 
 section article {
