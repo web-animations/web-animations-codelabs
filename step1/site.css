@@ -6,5 +6,6 @@ div.circleEffect {
   margin-top: -120vw;
   border-radius: 100%;
   position: absolute;
+  will-change: transform;
 }
 
