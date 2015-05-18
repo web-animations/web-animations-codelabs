@@ -21,12 +21,10 @@ function animateToSection(link, current, previous) {
   effectNode.style.background = newColor;
 
   var scaleSteps = [{transform: 'scale(0)'}, {transform: 'scale(1)'}];
-  var scaleEffect = new KeyframeEffect(effectNode, scaleSteps, {
-    duration: 2500, easing: 'ease-in-out'
-  });
+  var timing = {duration: 2500, easing: 'ease-in-out'};
 
-  var player = document.timeline.play(scaleEffect);
-  player.addEventListener('finish', function() {
+  var anim = effectNode.animate(scaleSteps, timing);
+  anim.addEventListener('finish', function() {
     header.style.backgroundColor = newColor;
     header.removeChild(effectNode);
   });
