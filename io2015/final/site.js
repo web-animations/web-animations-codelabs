@@ -155,15 +155,14 @@ window.addEventListener('load', function() {
   }
   var cloudGroup = new GroupEffect(cloudEffects);
 
-  var group = new GroupEffect([lightEffect, darkEffect, moonEffect, sunEffect, cloudGroup]);
-  var player = document.timeline.play(group);
+  var effect = new GroupEffect([lightEffect, darkEffect, moonEffect, sunEffect, cloudGroup]);
+  var player = document.timeline.play(effect);
   player.pause();
 
   function updatePlayer() {
     var top = window.scrollY;
-    var all = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var ratio = top / all;
-    player.currentTime = ratio;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    player.currentTime = top / height;
   }
   updatePlayer();
   window.addEventListener('scroll', updatePlayer);
