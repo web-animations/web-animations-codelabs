@@ -3,6 +3,7 @@
 This repository contains getting started codelabs for the Web Animations API.
 
 * [Web Animations Transitions and Playback Control](io2015)
+
   Learn how to use the Web Animations API to enhance a single-page HTML website, adding transitions between content and an effect based on the scroll position of the page.
 
 ## Background
