@@ -2,7 +2,8 @@
 
 This repository contains getting started codelabs for the Web Animations API.
 
-Right now, there's a single Google I/O 2015 codelab. For its steps and work, please check out the [Google I/O codelabs site](https://io2015codelabs.appspot.com/codelabs/web-animations-transitions-playbackcontrol).
+* [Web Animations Transitions and Playback Control](io2015)
+  Learn how to use the Web Animations API to enhance a single-page HTML website, adding transitions between content and an effect based on the scroll position of the page.
 
 ## Background
 
