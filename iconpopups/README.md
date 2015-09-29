@@ -19,7 +19,7 @@ In this codelab, we'll just use the `iconpopups` folder.
 
 ### Open the sample site
 
-Take a look at the popup we're going to enhance, by opening the `iconpopups/start/index.html` file. This just has a few icons, each of which can be clicked to open a number of icons. This happens instantaneously, without any effect.
+Take a look at the popup we're going to enhance, by opening the `iconpopups/start/index.html` file. This just has a few icons, each of which can be clicked to open a folder of further icons. This happens instantaneously, without any effect &endash; this is most unexciting!
 
 Our base site also has some boilerplate CSS and JavaScript to get us started. If you're curious about this boilerplate code, it lives in the `iconpopups/shared` folder. In this codelab, we won't modify it at all.
   
