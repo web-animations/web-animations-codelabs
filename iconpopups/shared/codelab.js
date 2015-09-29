@@ -20,6 +20,9 @@
  */
 
 
+/**
+ * Create dummy groups and icons.
+ */
 window.addEventListener('load', function() {
   var t = document.querySelector('template#icon-group');
   var holder = document.querySelector('.icons');
@@ -38,6 +41,22 @@ window.addEventListener('load', function() {
 
     holder.appendChild(local);
   }
+});
+
+
+/**
+ * Configure handlers to open/close all elements of class '.group'.
+ */
+window.addEventListener('load', function() {
+  document.body.addEventListener('click', closeActive);
+
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
+  groups.forEach(function(group) {
+    group.addEventListener('click', function(event) {
+      event.stopPropagation();
+      groupClick(group);
+    });
+  });
 });
 
 

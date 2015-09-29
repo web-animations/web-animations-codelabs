@@ -2,7 +2,7 @@
 var activeTarget = null;
 
 /**
- * Close any active button target.
+ * Close any active group target.
  */
 function closeActive() {
   if (activeTarget) {
@@ -13,31 +13,19 @@ function closeActive() {
 }
 
 /**
- * Handle a click on an unopen group.
- * @param {!Element} group selected
+ * Handle a click on a group. Responsible for closing any previous groups.
+ * @param {!Element} group selected, as per "icon-group" template
  */
 function groupClick(group) {
+  if (activeTarget) {
+    if (activeTarget == group) {
+      return;  // already visible, do nothing
+    }
+    closeActive();
+  }
   activeTarget = group;
 
+  // Change the visibility of the group's popup.
   var popup = activeTarget.querySelector('.popup');
   popup.style.visibility = 'visible';
 }
-
-/**
- * Configure handlers to open/close all elements of class '.group'.
- */
-window.addEventListener('load', function() {
-  document.body.addEventListener('click', closeActive);
-
-  var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
-  groups.forEach(function(group) {
-    group.addEventListener('click', function(event) {
-      event.stopPropagation();
-      if (activeTarget == group) {
-        return;  // aleady open
-      }
-      closeActive();
-      groupClick(group);
-    });
-  });
-});
