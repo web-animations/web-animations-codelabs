@@ -1,0 +1,9 @@
+
+.fill {
+  background: #eee;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  border-radius: 100%;
+  transform-origin: center top;
+}
