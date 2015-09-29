@@ -28,4 +28,4 @@ Open the `iconpopups/start/index.html` file in a text editor, and include `web-a
 
 ## Next
 
-**Next, let's animate something [Step 2: ??? &raquo;](step2.md)**
+**Next, let's get expansive in [Step 2: Expand the background &raquo;](step2.md)**
