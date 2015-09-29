@@ -1,7 +1,7 @@
 # Icon Popups
 
 This codelab will teach you how to use the Web Animations API to enhance a popup containing icons, with an effect inspired by Android's homescreen folders.
-You'll use animations, groups and learn about playback control.
+You'll use animations, groups and learn about playback rate.
 
 The final version will run on both desktop and mobile, in all modern browsers. Check out this preview:
 
