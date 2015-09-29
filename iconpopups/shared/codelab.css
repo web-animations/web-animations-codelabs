@@ -1,0 +1,95 @@
+/*
+ * Copyright 2015 Google Inc. All rights reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+body {
+  background: #263035;
+}
+
+.ball {
+  border-radius: 1000px;
+  background: #f44336;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  height: 64px;
+  width: 64px;
+  color: white;
+  margin: 12px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 4px solid transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+  user-select: none;
+  transition: border-color 0.125s;
+}
+
+.ball i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  line-height: 56px !important;
+  font-size: 38px !important;
+}
+
+.ball::after {
+  content: "";
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.75);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  border-radius: 100px;
+  transition: opacity 0.25s;
+}
+.ball:active::after {
+  opacity: .75;
+}
+
+.icons {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+.icons.main {
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 400px;
+}
+
+.group {
+  position: relative;
+}
+.group .popup {
+  visibility: hidden;
+  position: absolute;
+
+  z-index: 1;
+  overflow: hidden;
+
+  border-radius: 2px;
+}

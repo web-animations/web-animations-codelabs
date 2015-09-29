@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic|Material+Icons" rel="stylesheet" type="text/css" />
+  <link href="../shared/codelab.css" rel="stylesheet" type="text/css" />
+  <link href="site.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.1.2/web-animations-next.min.js"></script>
+  <script src="../shared/codelab.js"></script>
+  <script src="site.js"></script>
+  <style type="text/css">
+
+.fill {
+  background: #eee;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  border-radius: 100%;
+  transform-origin: center top;
+}
+
+  </style>
+</head>
+<body>
+
+<template id="icon-group">
+  <div class="group">
+    <div class="popup">
+      <div class="fill"></div>
+      <div class="icons"></div>
+    </div>
+  </div>
+</template>
+
+<div class="icons main">
+  <!-- Default, random icons created by codelab.js -->
+</div>
+
+<script>
+
+window.addEventListener('load', function() {
+  var groups = Array.prototype.slice.call(document.querySelectorAll('.group'));
+  var activePlayer = null;
+  var activeTarget = null;
+
+  function closeActive() {
+    if (activePlayer && activePlayer.playbackRate > 0) {
+      activePlayer.reverse();
+      activePlayer = null;
+      activeTarget = null;
+    }
+  }
+
+  groups.forEach(function(group) {
+    group.addEventListener('click', function(event) {
+      event.stopPropagation();
+      if (activeTarget == group) {
+        return;  // don't animate again
+      }
+      closeActive();
+
+      var popup = group.querySelector('.popup');
+      var icons = popup.querySelector('.icons');
+      var fill = popup.querySelector('.fill');
+
+      var rect = popup.getBoundingClientRect();
+      var dim = Math.max(rect.width, rect.height);
+      var longEdge = Math.sqrt(rect.width*rect.width  + rect.height*rect.height);
+      if (!longEdge) {
+        return;  // no icons
+      }
+      fill.style.width = longEdge + 'px';
+      fill.style.height = longEdge + 'px';
+      fill.style.top = -((longEdge - dim)/2) + 'px'
+      fill.style.left = -((longEdge - rect.width)/2) + 'px';
+
+      var duration = 1/Math.atan(rect.height/100) * rect.height * 2;
+      var timing = {
+        duration: duration,
+        easing: 'ease-in-out',
+        fill: 'forwards',
+      };
+
+      var fillAnim = new KeyframeEffect(fill, [
+        {transform: 'scale(0)'},
+        {transform: 'scale(1)'},
+      ], timing);
+
+      var iconsAnim = new KeyframeEffect(icons, [
+        {overflow: 'hidden', 'max-height': 0, opacity: .8},
+        {overflow: 'hidden', 'max-height': rect.height + 'px', opacity: 1},
+      ], timing);
+
+      var popupFrame = {visibility: 'visible', height: rect.height + 'px'};
+      var popupAnim = new KeyframeEffect(popup, [popupFrame, popupFrame], timing);
+
+      var anim = new GroupEffect([fillAnim, iconsAnim, popupAnim]);
+      activePlayer = document.timeline.play(anim);
+      activeTarget = group;
+    });
+  });
+
+  document.body.addEventListener('click', closeActive);
+});
+
+</script>
+
+</body>
+</html>
