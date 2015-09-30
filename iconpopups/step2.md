@@ -75,6 +75,8 @@ This is a bit of a long snippet, but it's mostly just work to make sure that the
 
 Try it out now! Load the `start/index.html` file in your browser, and click on an icon. You should see the fill occur on open.
 
+> Note! If you use Chrome Developer Tools (or similar, on another browser) to disable the `overflow: hidden` CSS property of `.popup`, you can see the full extent of the fill circle.
+
 Finally, the very last line sets the duration of the effect to 1000, or one second. This is actually probably a bit too slow for most animations. Instead, let's use a duration based on the height of the popup-
 
 ```js
