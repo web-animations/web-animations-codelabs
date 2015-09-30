@@ -5,10 +5,11 @@ var activeTarget = null;
  * Close any active group target.
  */
 function closeActive() {
-  if (activeTarget) {
-    var popup = activeTarget.querySelector('.popup');
-    popup.style.visibility = 'hidden';
-  }
+  if (!activeTarget) { return; }
+
+  var popup = activeTarget.querySelector('.popup');
+  popup.style.visibility = 'hidden';
+
   activeTarget = null;
 }
 
