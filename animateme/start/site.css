@@ -1,0 +1,23 @@
+
+body {
+  margin: 0;
+  margin-top: 50vh;  /* position at 50% from top */
+  background: #eee;
+}
+
+.icons {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.icon {
+  background: red;
+  border-radius: 1000px; /* i.e., a 'large' value */
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: -20px;
+  margin-top: -20px;
+}
