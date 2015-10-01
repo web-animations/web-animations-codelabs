@@ -1,6 +1,6 @@
 # Codelabs
 
-This repository contains getting started codelabs for the Web Animations API.
+This repository contains codelabs for the Web Animations API. If you're reading this on GitHub and would like to work through these codelabs, be sure to clone or download this repository using the links to the right.
 
 * [Web Animations Transitions and Playback Control](io2015)
 
