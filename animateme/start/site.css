@@ -5,14 +5,14 @@ body {
   background: #eee;
 }
 
-.icons {
+.dots {
   width: 0;
   height: 0;
   margin: 0 auto;
   position: relative;
 }
 
-.icon {
+.dot {
   background: red;
   border-radius: 1000px; /* i.e., a 'large' value */
   position: absolute;
