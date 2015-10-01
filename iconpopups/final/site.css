@@ -5,5 +5,6 @@
   z-index: -10;
   top: 0;
   border-radius: 100%;
-  transform-origin: center top;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
 }
