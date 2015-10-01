@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <link href="site.css" rel="stylesheet" type="text/css" />
+  <script>
+window.addEventListener('load', function() {
+  var dots = document.querySelectorAll('.dot');
+  for (var i = 0; i < dots.length; ++i) {
+    var dot = dots[i];
+    var start = (i / dots.length) * 360;
+    var frames = [
+      {transform: 'rotate(' + start + 'deg) translate(80px)'},
+      {transform: 'rotate(' + (360-(i*5)) + 'deg) translate(80px) '},
+    ];
+    var timing = {
+      duration: 2500,
+      iterations: Infinity,
+      direction: 'alternate',
+      easing: 'ease-in-out',
+    };
+    dot.animate(frames, timing);
+  }
+});
+  </script>
+</head>
+<body>
+
+<div class="dots">
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+  <div class="dot"></div>
+</div>
+
+</body>
+</html>
