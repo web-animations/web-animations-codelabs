@@ -31,5 +31,5 @@ If you'd like to learn more about the Web Animations API, try these resources-
 
 Web Animations is a new JavaScript API for driving animated content on the web. By unifying the animation features of SVG and CSS, Web Animations unlocks features previously only usable declaratively, and exposes powerful, high-performance animation capabilities to developers.
 
-For more details see the [W3C specification](http://w3c.github.io/web-animations/), or the [JavaScript implementation](https://github.com/web-animations/web-animations-js).
+For more details see the [W3C specification](http://w3c.github.io/web-animations/), the [JavaScript implementation](https://github.com/web-animations/web-animations-js), and [native browser support levels](http://caniuse.com/#feat=web-animation).
 
