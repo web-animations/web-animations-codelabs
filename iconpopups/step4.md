@@ -22,7 +22,7 @@ This might seem verbose, but it showcases a hugely important part of Web Animati
 
 Rather than setting the CSS `visibility` property directly, let's add another effect that we can run as part of the group.
 
-Remove all the lines in the file which modify this property. First, inside `closeActive` (leave the event listener for later though, as we'll still need it)-
+Remove all the lines in the file which modify this property. First, inside `closeActive`, either comment the visibility line, or remove the whole listener-
 
 ```js
   activePlayer.addEventListener('finish', function() {
