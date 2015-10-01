@@ -14,18 +14,18 @@ This repository contains getting started codelabs for the Web Animations API.
 
 If you'd like to learn more about the Web Animations API, try these resources-
 
-* Read the [https://developers.google.com/web/updates/tags/animations](#animations updates on Google Developers) and  [https://developers.google.com/web/fundamentals/look-and-feel/animations/?hl=en](Animations on Web Fundamentals)
+* Read the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations) and  [https://developers.google.com/web/fundamentals/look-and-feel/animations/?hl=en](Animations on Web Fundamentals)
 
 * Check out the [Web Animations Demos](http://web-animations.github.io/web-animations-demos/), hosted [on GitHub](https://github.com/web-animations/web-animations-demos)
 
-* Use the [https://w3c.github.io/web-animations/](W3C specification) for reference
+* Use the [W3C specification](https://w3c.github.io/web-animations/) for reference
 
 * Watch these videos-
-  * [https://www.youtube.com/watch?v=WaNoqBAp8NI](Modern Animation Fundamentals)
-  * [https://www.youtube.com/watch?v=ep0_0W0qWsc](Silky smooth Web Animations)
-  * [https://www.youtube.com/watch?v=tNgBQC9qMP4](HTTP 203: Christmas Special)
+  * [Modern Animation Fundamentals](https://www.youtube.com/watch?v=WaNoqBAp8NI)
+  * [Silky smooth Web Animations](https://www.youtube.com/watch?v=ep0_0W0qWsc)
+  * [HTTP 203: Christmas Special](https://www.youtube.com/watch?v=tNgBQC9qMP4)
 
-* Dive into [https://github.com/google/santa-tracker-web](Santa Tracker), which uses the Web Animations API in about ⅓ of its scenes
+* Dive into [Santa Tracker](https://github.com/google/santa-tracker-web), which uses the Web Animations API in about ⅓ of its scenes
 
 ## Background
 
