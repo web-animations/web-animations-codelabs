@@ -14,7 +14,7 @@ This repository contains getting started codelabs for the Web Animations API.
 
 If you'd like to learn more about the Web Animations API, try these resources-
 
-* Read the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations) and  [https://developers.google.com/web/fundamentals/look-and-feel/animations/?hl=en](Animations on Web Fundamentals)
+* Read [Web Fundamentals - Animations](https://developers.google.com/web/fundamentals/look-and-feel/animations/?hl=en) and the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations)
 
 * Check out the [Web Animations Demos](http://web-animations.github.io/web-animations-demos/), hosted [on GitHub](https://github.com/web-animations/web-animations-demos)
 
