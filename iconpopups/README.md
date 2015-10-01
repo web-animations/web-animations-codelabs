@@ -5,7 +5,7 @@ You'll use animations, groups and learn about playback rate.
 
 The final version will run on both desktop and mobile, in all modern browsers. Check out this preview:
 
-*TODO: preview gif*
+![Preview][resources/preview.gif]
 
 ## Introduction
 
