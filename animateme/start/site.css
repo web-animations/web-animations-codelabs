@@ -13,11 +13,24 @@ body {
 }
 
 .dot {
-  background: red;
   border-radius: 1000px; /* i.e., a 'large' value */
   position: absolute;
   width: 40px;
   height: 40px;
   margin-left: -20px;
   margin-top: -20px;
+  box-sizing: border-box;
+  border: 2px solid rgba(33, 33, 33, 0.5);
+}
+.dot:nth-child(4n+0) {
+  background: #B71C1C;
+}
+.dot:nth-child(4n+1) {
+  background: #E65100;
+}
+.dot:nth-child(4n+2) {
+  background: #01579B;
+}
+.dot:nth-child(4n+3) {
+  background: #33691E;
 }
