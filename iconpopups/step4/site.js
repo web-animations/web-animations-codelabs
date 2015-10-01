@@ -9,7 +9,12 @@ function closeActive() {
   if (!activeTarget) { return; }
 
   var popup = activeTarget.querySelector('.popup');
+  //popup.style.visibility = 'hidden';
+
   activePlayer.reverse();
+  activePlayer.addEventListener('finish', function() {
+    //popup.style.visibility = 'hidden';
+  });
 
   activeTarget = null;
   activePlayer = null;
@@ -52,15 +57,6 @@ function groupClick(group) {
     easing: 'ease-out',
   };
   var fillEffect = new KeyframeEffect(fill, [{transform: 'scale(0)'}, {transform: 'scale(1)'}], timing);
-
-  // Create icon appear effects.
-  var icons = Array.prototype.slice.call(popup.querySelectorAll('.ball'));
-  var iconEffect = new SequenceEffect(icons.map(function(icon) {
-    var effect = [{opacity: 0}, {opacity: 1}];
-    var timing = {duration: rect.height * 2 / icons.length, fill: 'backwards'};
-    return new KeyframeEffect(icon, effect, timing);
-  }));
-
-  var groupEffect = new GroupEffect([fillEffect, popupEffect, iconEffect], {fill: 'forwards'});
+  var groupEffect = new GroupEffect([fillEffect, popupEffect]);
   activePlayer = document.timeline.play(groupEffect);
 }
