@@ -3,6 +3,7 @@ body {
   margin: 0;
   margin-top: 50vh;  /* position at 50% from top */
   background: #eee;
+  overflow: hidden;
 }
 
 .dots {
