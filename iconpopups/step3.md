@@ -52,4 +52,4 @@ This solution to visibility isn't perfect, but we'll see how we can fix that in 
 
 The completed code for this step is available in `iconpopups/step3`.
 
-**Next, let's neaten up the effect in [Step 4: Grouping together &raquo;](step4.md)**
+**Next, let's neaten up the effect in [Step 4: Holding visibility &raquo;](step4.md)**
