@@ -47,4 +47,4 @@ Without this change, the icons would be permanently held at `opacity: 0`. This w
 
 You're all done! The final version of the site is located in `iconpopups/final`.
 
-**Our conclusion is in [Step 6: Congratulations! &raquo](step6.md)**
+**Our conclusion is in [Step 6: Congratulations! &raquo;](step6.md)**
