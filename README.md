@@ -2,19 +2,23 @@
 
 This repository contains codelabs for the Web Animations API. If you're reading this on GitHub and would like to work through these codelabs, be sure to clone or download this repository using the links to the right.
 
-* [Web Animations Transitions and Playback Control](io2015)
+* [Animate Me](animateme)
 
-  Learn how to use the Web Animations API to enhance a single-page HTML website, adding transitions between content and an effect based on the scroll position of the page.
+  Learn about the basics of Web Animations, including the `Element.animate` method, to animate a few dots around the screen.
 
 * [Icon Popups](iconpopups)
 
   Use the Web Animations API to enhance a menu containing icons, with an effect inspired by Android's homescreen folders. You'll use animations, groups and learn about playback rate.
 
+* [Transitions and Playback Control](io2015)
+
+  Learn how to use the Web Animations API to enhance a single-page HTML website, adding transitions between content and an effect based on the scroll position of the page.
+
 ## Learn More
 
 If you'd like to learn more about the Web Animations API, try these resources-
 
-* Read [Animations on Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations/?hl=en) and the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations)
+* Read [Animations on Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations) and the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations)
 
 * Check out the [Web Animations Demos](http://web-animations.github.io/web-animations-demos/), hosted [on GitHub](https://github.com/web-animations/web-animations-demos)
 

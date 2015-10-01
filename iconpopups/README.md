@@ -13,9 +13,7 @@ Before we start, let's perform some introduction steps.
 
 ### Get the sample site
 
-You'll need to get a copy of the source code. You can head to [the GitHub repository](https://github.com/web-animations/web-animations-codelabs) to find information about cloning this repository (or downloading a snapshot as a .zip file).
-
-In this codelab, we'll just use the `iconpopups` folder.
+You'll need to get a copy of the source code - for more information, head to [the GitHub repository](https://github.com/web-animations/web-animations-codelabs). In this codelab, we'll just use the `iconpopups` folder.
 
 ### Open the sample site
 
