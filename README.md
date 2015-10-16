@@ -2,6 +2,8 @@
 
 This repository contains codelabs for the Web Animations API. If you're reading this on GitHub and would like to work through these codelabs, be sure to clone or download this repository using the links to the right.
 
+If you're not sure where to start, note that these codelabs are roughly ordered from least difficult to most difficult - so be sure start at the top and work your way down!
+
 * [Animate Me](animateme)
 
   Learn about the basics of Web Animations, including the `Element.animate` method, to animate a few dots around the screen.
@@ -20,7 +22,7 @@ If you'd like to learn more about the Web Animations API, try these resources-
 
 * Read [Animations on Web Fundamentals](https://developers.google.com/web/fundamentals/look-and-feel/animations) and the [#animations updates on Google Developers](https://developers.google.com/web/updates/tags/animations)
 
-* Check out the [Web Animations Demos](http://web-animations.github.io/web-animations-demos/), hosted [on GitHub](https://github.com/web-animations/web-animations-demos)
+* Check out the [Web Animations Demos](http://web-animations.github.io/web-animations-demos/) for inspiration, hosted [on GitHub](https://github.com/web-animations/web-animations-demos)
 
 * Use the [W3C specification](https://w3c.github.io/web-animations/) for reference
 
