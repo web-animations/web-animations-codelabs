@@ -12,4 +12,4 @@ We've covered-
 
 * Building unique keyframes at runtime
 
-If you'd like to learn more, head back to [Web Animations Codelabs](https://github.com/samthor/web-animations-codelabs).
+If you'd like to learn more, head back to [Web Animations Codelabs](https://github.com/web-animations/web-animations-codelabs).

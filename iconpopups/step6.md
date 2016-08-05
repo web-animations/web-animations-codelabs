@@ -14,4 +14,4 @@ We've covered-
 
 * A brief introduction to using fill modes to your advantage
 
-If you'd like to learn more, head back to [Web Animations Codelabs](https://github.com/samthor/web-animations-codelabs).
+If you'd like to learn more, head back to [Web Animations Codelabs](https://github.com/web-animations/web-animations-codelabs).
