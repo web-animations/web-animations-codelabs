@@ -15,7 +15,7 @@ Open the `animateme/start/index.html` file in a text editor, and include `web-an
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <link href="site.css" rel="stylesheet" type="text/css" />
   <!-- Add the line below -->
-  <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.1.2/web-animations.js"></script>
+  <script src="https://cdn.rawgit.com/web-animations/web-animations-js/2.2.2/web-animations.js"></script>
   <script>
 window.addEventListener('click', function() {
   // Your code here!
@@ -26,9 +26,9 @@ window.addEventListener('click', function() {
 
 ### Alternatives
 
-1. If you're doing this codelab offline, include a local version of the `web-animations-next.js` script from a checked out [polyfill repo](https://github.com/web-animations/web-animations-js#web-animations-nextminjs)
+1. You can use [NPM](https://www.npmjs.com/package/web-animations-js) or [Bower](https://bower.io/) to depend on `web-animations-js`, version 2.0.0 or later.
 
-2. You can use [Bower](http://bower.io/) to depend on `web-animations-js`, version 2.0.0 or later.
+2. You could check out the [polyfill repo](https://github.com/web-animations/web-animations-js#web-animations-nextminjs) directly
 
 ## Next
 
